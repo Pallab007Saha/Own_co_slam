@@ -1,0 +1,12 @@
+inherit_from: configs/IPhone/iphone-copy.yaml
+mapping:
+  bound: [[-2,2],[-1.2,0.1],[-3.5,1.2]]
+  marching_cubes_bound: [[-2,2],[-1.2,0.1],[-2,1.2]]
+data:
+  datadir: ./data/Roomvideo
+  trainskip: 1
+  output: output/Roomvideo
+  exp_name: demo
+cam:
+  far: 5
+  depth_trunc: 5

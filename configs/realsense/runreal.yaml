@@ -1,0 +1,13 @@
+inherit_from: configs/realsense/realsense.yaml
+mapping:
+  bound: [[-2,2],[-1.2,0.1],[-3.5,1.2]]
+  marching_cubes_bound: [[-2,2],[-1.2,0.1],[-2,1.2]]
+data:
+  datadir: ./data/RoomSlow1  
+  trainskip: 1
+  output: output/realsense
+  exp_name: demo
+cam:
+  near: 0.6 # ideal range specsheet
+  far: 6 # ideal range specsheet
+  depth_trunc: 100.
